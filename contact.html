@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Roboto:ital@0;1&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Refer this link : https://gridbyexample.com/ -->
+    <title>Contact Page</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html" class="active">Contact</a>
+       
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+       
+        </div>
+        </div>
+      </div>
+      <div class="greetings">
+        <h1 id="Cgreet">Get in touch!</h1>
+      </div>
+      
+      <section class="htc">
+        <p class="info" >We are situated at 34 Bree Street - Parys</p>
+        <p class="info" >Call us directly on 073 995 1843</p>
+        <p class="info" >Alternatively complete the form bellow:</p>
+      </section>
+      <div class="form-container">
+        <form action="https://formsubmit.co/lucdutrieux@yahoo.com" method="POST" id="userform">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_autoresponse" value="Thank you. Will respond shortly.">
+          <input type="text" name = "name" placeholder="Enter your full name" required>
+          <input type="email" name = "email"placeholder="Enter your e-mail address"required>
+          <textarea name="message" id="usermessage" placeholder="Your Message" cols="20" rows="5" required></textarea>
+          <button type="submit">Send</button>
+          <input type="button" onclick="myFunction()" value="Reset form">
+        
+      </form>  
+    </div>  
+      <h3 id="Ch">At your servive:</h3>
+      
+      <div class="slideshow-container">
+    
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img class="staff"  src="Images\Karin Van Greuning.jpg" style="width:100%">
+          <div class="text">Karin Van Greuning</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img class="staff" src="Images\Chantelle Bonthuys.jpg" style="width:100%">
+          <div class="text">Chantelle Bonthuis</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img class="staff"  src="Images\Sussana Padile.jpg" style="width:100%;">
+          <div class="text">Sussana Padile</div>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+             
+     
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+    </script> 
+    
+    <script>
+      function myFunction() {
+          var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav";
+                }
+              }
+    </script>  
+    <script>
+    function myFunction() {
+      document.getElementById("userform").reset();
+    }
+    </script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+    <script>
+    function myFunction() {
+      document.getElementById("userform").reset();
+    }
+    </script>  
+    </body>
+    </html>

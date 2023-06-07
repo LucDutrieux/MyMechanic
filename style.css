@@ -1,0 +1,449 @@
+html {
+  background: url(https://cdn.pixabay.com/photo/2019/06/19/15/18/automobile-4285116__340.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 0;
+  padding-top: 0;
+}
+body {
+  margin: 0;
+  /* font-family: dancing-script; make a decision here */
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(62, 114, 154);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.Hheading{
+display: block;
+text-align: center;
+}
+#Hmainheading {
+color: yellow;
+text-shadow: red 6px 2px 10px;
+font-size: 60px;
+margin-top: 100px;
+}
+#townheading {
+  color: yellow;
+  font-size: 25px;
+  margin-top: -50px;
+}  
+.topnav a {
+  float: left;
+  display: block;
+  color: yellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(72, 75, 157);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+#gen {
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.image-container1, .image-container2 {
+  display: block;
+  text-align: center;
+}
+/* Styling The Form */
+input, textarea, button {
+display: block;
+margin-bottom: 20px;
+margin-left: 35%;
+padding: 10px;
+background-color:rgb(196, 212, 245);
+border: 2px solid rgb(92, 92, 255);
+border-radius: 5%;
+}
+#contact {
+margin-top: 90px;
+margin-bottom: 25px;
+}
+button {
+background-color: rgb(106, 238, 106);
+}
+button:hover {
+background-color: orange;
+}
+.form-container {
+
+display:flex;
+justify-content: center;
+padding-right: 155px;
+}
+h1, h3,.htc {
+font-family: dancing-script;
+color: blue;
+text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+.staff {
+/* width: 100px; */
+height:220px;
+border: 2px solid green;
+border-radius: 8px;
+padding: 5px;
+}
+/* Carousel CSS */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 150px;
+position: relative;
+margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color:rgb(255, 255, 255) ;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+.staff {
+/* width: 100px; */
+height:220px;
+border: 2px solid green;
+border-radius: 8px;
+padding: 5px;
+}
+#Cgreet {
+color: yellow;
+font-size: 35px;
+margin-top: 80px;
+}
+.info {
+font-size: 25px;
+color: white;
+}
+/* Styling The Form */
+input, textarea, button {
+display: block;
+margin-bottom: 20px;
+margin-left: 35%;
+padding: 10px;
+background-color:rgb(196, 212, 245);
+border: 2px solid rgb(92, 92, 255);
+border-radius: 5%;
+}
+#contact {
+margin-top: 90px;
+margin-bottom: 25px;
+}
+button {
+background-color: rgb(106, 238, 106);
+}
+button:hover {
+background-color: orange;
+}
+.form-container {
+display:flex;
+justify-content: center;
+padding-right: 155px;
+}
+h1, h3,.htc {
+font-family: dancing-script;
+color: blue;
+text-align: center;
+}
+#Ch {
+  color: yellow;
+}
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: yellow;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+.staff {
+/* width: 100px; */
+height:220px;
+border: 2px solid green;
+border-radius: 8px;
+padding: 5px;
+}
+ /*Styling About Page  */
+#Aheading {
+  color:yellow;
+  font-size: 40px;
+  margin-top: 300px;
+  
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 15px;
+  color: #444;
+  
+}
+.box {
+  background-color: rgb(160, 164, 166);
+  color: #fff;
+  height: 160px;
+  border: solid 4px blue;
+  border-radius: 15px;
+  padding: 20px;
+  font-size: 150%;
+  
+}
+.grid_container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -200px;
+}
+ .Main_Container {
+  display: block;
+  text-align: center;
+  margin-top: -200px;
+}
+ #Astatement {
+  font-size: 22px;
+  color: yellow;
+}
+ /* Reviews Styling */
+ #Rstatement{
+  font-size: 40px;
+  color: yellow;
+  margin-top: 80px;
+}
+#Rstat{
+align-content: center;
+}
+.reviews {
+  border: solid 4px rgb(5, 113, 185);
+  border-radius: 15px;
+  padding: 10px;
+  background-color: bisque;
+  width: 600px;
+  text-align: justify;
+  margin-left: 33%;
+}
+.review_container {
+  display: block;
+  text-align: center;
+}
+.comments {
+  color: gray;
+  font-size: 20px;
+  font-weight:bold;
+}
+/* HTML PAGES MEDIA BREAKPOINTS */
+@media (max-width:1000px) {
+  .box {
+    font-size: 125%;
+  }
+  .reviews{
+    width: 350px;
+    margin-left: 30%;
+  }
+}
+@media (max-width:778px) {
+  .box {
+    font-size: 100%;
+  }
+  .wrapper {
+    grid-template-columns: 200px 200px 200px;  
+  }
+}
+@media (max-width:630px) {
+  .box {
+    font-size: 100%;
+  }
+  .wrapper {
+    grid-template-columns: 180px 180px 180px;  
+  }
+  .reviews{
+    margin-left: 26%;
+  }
+  
+}  
+@media (max-width:573px) {
+  .box {
+    font-size: 100%;
+  }
+  .wrapper {
+    grid-template-columns: 160px 160px 160px;  
+  }
+  .reviews{
+    margin-left: 20%;
+  }
+}
+@media (max-width:505px) {
+  .box {
+    font-size: 100%;
+  }
+  .wrapper {
+    grid-template-columns: 140px 140px 140px;  
+  }
+}
+@media (max-width:448px) {
+  .box {
+    font-size: 95%;
+  }
+  .wrapper {
+    grid-template-columns: 120px 120px 120px;  
+  }
+}  
+@media (max-width:395px) {
+  .box {
+    font-size: 85%;
+  }
+  .wrapper {
+    grid-template-columns: 100px 100px 100px;  
+  }
+  #Rstat{
+    text-align: left;
+  
+  }
+}
+@media (max-width:290px) {
+  .box {
+    font-size: 70%;
+  }
+  .wrapper {
+    grid-template-columns: 80px 100px 80px;  
+  }
+  #Aheading {
+    font-size: 30px;
+  }
+}  

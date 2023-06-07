@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Roboto:ital@0;1&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Refer this link : https://gridbyexample.com/ -->
+    <title>My Mechanic Home Page</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+       
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="Hheading">
+      <h1 id="Hmainheading">My Mechanic</h1>
+      <h3 id="townheading">Parys</h3>
+      <br>
+      <br>
+      <h5 id="townheading">Home for well maintained and serviced vehicles</h5>
+      </div>
+      <div class="image-container1">
+      <div class="row">
+        <div class="column">
+          <img id="gen" src="Images\Wheel Alignmemt.jpg" alt="WS_pic2" style="width:90%">
+        </div>
+        <div class="column">
+          <img id="gen" src="Images\Brake Assembly.jpg" alt="WS_pic2" style="width:90%">
+        </div>
+        <div class="column">
+          <img id="gen" src="Images\Engine.jpg" alt="WS_pic3" style="width:90%">
+        </div>
+      </div>
+      </div>
+      <div class="image-container2">
+        <div class="row">
+          <div class="column">
+            <img id="gen" src="Images\Sport Car Upgrade.jpg" alt="WS_pic4" style="width:90%">
+          </div>
+          <div class="column">
+            <img id="gen" src="Images\Open Engine.jpg" alt="WS_pic5" style="width:90%">
+          </div>
+          <div class="column">
+            <img id="gen" src="Images\Parked VW Beetle.jpg" alt="WS_pic6" style="width:90%">
+          </div>
+        </div>
+        </div>
+
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>    
+</body>
+</html>
+

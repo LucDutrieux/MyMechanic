@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Roboto:ital@0;1&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Refer this link : https://gridbyexample.com/ -->
+    <title>Reviews Page</title>
+</head>
+<body> 
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="reviews.html" class="active">Reviews</a>
+        <a href="contact.html">Contact</a>
+       
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div id="Rstat">
+      <h1 id="Rstatement">This Is What Our Customers Say!</h1>
+      </div>
+      <div class="review_container">
+        <img id="chev" src="Images\automobile-gc7114a20a_1280.png" alt="chev pic" width=500px>
+        <br>
+        <p class="reviews"> <img src="Images\chat-gc3365404c_640.png" width="35px" alt="chat_icon"> Been bringing my car here for the past 5 years. Never a dissapointment. Paul 1/12/22</p> 
+        <img src="Images\chevrolet-g38597fdd9_1280.png" alt="car" width="400px">
+        <br>
+        <p class="reviews"> <img src="Images\chat-gc3365404c_640.png" width="35px" alt="chat_icon"> Uitstekende diens,dankie.Professioneel,vriendelik en doeltreffend. Het totale vertroue in die diens wat julle lewer.
+          Altyd 'n plesier om met julle besigheid te doen. Mrs C 19/10/22</p> 
+        <img src="Images\mercedes-benz-190-sl-g4dc28a3e0_1280.png" alt="merc" width=400px>
+        <br>
+        <p class="reviews"> <img src="Images\chat-gc3365404c_640.png" width="35px" alt="chat_icon"> As always great service and very friendly. I would not take my car anywhere else. Simon H
+          ***** 7/9/22</p>
+        <img src="Images\opel-diplomat-g4611d964f_1280.png" alt="Opel" width="400px">
+        <br>
+        <p class="reviews"> <img src="Images\chat-gc3365404c_640.png" width="35px" alt="chat_icon"> 
+          Baie hulpvaardige mense. Soms moeilik om onderdele vir my ou motor te kry maar hulle hou my altyd op hoogte. Hou aan met die goeie werk! Riaan 18/7/22</p>
+        
+
+      </div>
+      </div>
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>    
+</body>
+</html>
+
+

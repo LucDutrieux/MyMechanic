@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Roboto:ital@0;1&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Refer this link : https://gridbyexample.com/ -->
+    <title>About Us</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" >Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+       
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      
+      </div>
+      <div class="Main_Container">
+      <h1 id="Aheading">About Us</h1>
+      <h3 id="Astatement">Our passion is to keep your vehicle well maintained</h3>
+      <h3 id="Astatement">and in peak performance</h3>
+      
+      <div class="grid_container">
+      <div class="wrapper">
+        <div class="box a"><p>We cater for all makes of cars</p></div>
+        <div class="box b"><p>No jobs too small or too big</p></div>
+        <div class="box c"><p>We keep costs down to a minimum</p></div>
+        <div class="box d"><p>We employ qualified mechanics</p></div>
+        <div class="box e"><p>Service costs include a car wash</p></div>
+        <div class="box f"><p>We assure you of our best attention</p></div>
+      </div>
+      </div>
+      
+
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>    
+</body>
+</html>
